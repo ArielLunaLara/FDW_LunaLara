@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio de Selectores</title>
+    <style>
+        /* 1. Selector global (*) */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        /* 2. Selector por tipo (p) */
+        p {
+            font-size: 18px;
+            color: darkgray; /* También puedes usar códigos hexadecimales como #555555 */
+        }
+
+        /* 3. Selector por clase (.especial) */
+        .especial {
+            background-color: lightblue;
+            font-weight: bold;
+        }
+
+        /* 4. Selector por ID (#importante) */
+        #importante {
+            background-color: red;
+            color: white;
+        }
+
+        /* 5. Selector por atributo (input[placeholder]) */
+        input[placeholder] {
+            border: 1px solid blue; /* Agregamos 'solid' para que el borde sea visible */
+            padding: 5px;
+        }
+
+        /* 6. Selector por atributo y valor (input[type="password"]) */
+        input[type="password"] {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="contenedor">
+        <h1>Ejercicio de Selectores CSS</h1>
+        <ul class="lista">
+            <li>Elemento 1</li>
+            <li class="destacado">Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        
+        <p>Este es un párrafo normal.</p>
+        <p class="especial">Este es un párrafo con una clase especial.</p>
+        <p id="importante">Este párrafo tiene un ID único.</p>
+        
+        <input type="text" placeholder="Escribe aquí">
+        <input type="email" placeholder="Correo electrónico">
+        <input type="password" placeholder="Contraseña">
+        <br><br> <a href="https://ejemplo.com" target="_blank">Enlace externo</a>
+        <a href="#" class="boton">Botón de prueba</a>
+    </div>
+
+</body>
+</html>
